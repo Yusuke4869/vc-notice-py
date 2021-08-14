@@ -3,6 +3,8 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 
+load_dotenv()
+
 from commons.ini import Config
 from commons.log import Log
 import commons.errors as errors
@@ -10,7 +12,6 @@ import commons.functions as func
 
 from src.data.guilds import GuildData
 
-load_dotenv()
 config = Config()
 log = Log()
 guild = GuildData()
