@@ -65,7 +65,13 @@ class Settings(commands.Cog):
                     errors.error_print(e)
                     await ctx.send("Could not delete old webhook")
 
-        webhook = await ctx.channel.create_webhook(name="VC Notice")
+        try:
+            webhook = await ctx.channel.create_webhook(name="VC Notice")
+        except discord.Forbidden:
+            await ctx.send("Could not create webhook (Reason: I do not have permissions)")
+        except Exception as e:
+            errors.error_print(e)
+            await ctx.send("Could not create webhook")
         result = guild.change_webhookurl(str(ctx.guild.id), webhook.url)
         if result:
             await ctx.send("Notice channel changed to this channel")
