@@ -87,7 +87,7 @@
             },
             "3": {
                 "name": "${PREFIX}set channel",
-                "value": "set notice channel"
+                "value": "通知チャンネルを設定します"
             }
         }
     }
