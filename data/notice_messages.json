@@ -1,0 +1,34 @@
+{
+    "english": {
+        "title": {
+            "joined": "Connected Voice Channel",
+            "leaved": "Disconnected Voice Channel",
+            "started_streaming": "Started Streaming",
+            "ended_streaming": "Ended Streaming",
+            "joined_afk": "Connected AFK Channel"
+        },
+        "description": {
+            "joined": "Joined ${CHANNELNAME}",
+            "leaved": "Leaved ${CHANNELNAME}",
+            "started_streaming": "Let's watch the streaming together!",
+            "ended_streaming": "Please stream again later!",
+            "joined_afk": "Your voice hasn't been heard"
+        }
+    },
+    "japanese": {
+        "title": {
+            "joined": "VCに接続しました",
+            "leaved": "VCから切断しました",
+            "started_streaming": "配信を開始しました",
+            "ended_streaming": "配信を終了しました",
+            "joined_afk": "AFKに飛ばされました"
+        },
+        "description": {
+            "joined": "${CHANNELNAME} に参加しました",
+            "leaved": "${CHANNELNAME} から退出しました",
+            "started_streaming": "みんなで見よう！",
+            "ended_streaming": "またやってね！",
+            "joined_afk": "あなたの声は聞こえないよ"
+        }
+    }
+}

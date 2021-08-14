@@ -1,0 +1,94 @@
+{
+    "help": {
+        "english": {
+            "title": "Help",
+            "description": "All commands of this bot",
+            "description_num": 3,
+            "1": {
+                "name": "${PREFIX}help",
+                "value": "show this help"
+            },
+            "2": {
+                "name": "${PREFIX}overview",
+                "value": "show overview of this bot"
+            },
+            "3": {
+                "name": "${PREFIX}set",
+                "value": "show help of settings"
+            }
+        },
+        "japanese": {
+            "title": "ヘルプ",
+            "description": "",
+            "description_num": 3,
+            "1": {
+                "name": "${PREFIX}help",
+                "value": "このヘルプを表示します"
+            },
+            "2": {
+                "name": "${PREFIX}overview",
+                "value": "このbotの概要を表示します"
+            },
+            "3": {
+                "name": "${PREFIX}set",
+                "value": "設定のヘルプを表示します"
+            }
+        }
+    },
+    "overview": {
+        "english": {
+            "title": "Overview",
+            "description": "",
+            "description_num": 1,
+            "1": {
+                "name": "What is this bot?",
+                "value": "This bot notify your activity in voice channels"
+            }
+        },
+        "japanese": {
+            "title": "概要",
+            "description": "",
+            "description_num": 1,
+            "1": {
+                "name": "このBotについて",
+                "value": "このBotは音声チャンネルでの活動をお知らせします"
+            }
+        }
+    },
+    "settings": {
+        "english": {
+            "title": "Settings Help",
+            "description": "argument is []",
+            "description_num": 3,
+            "1": {
+                "name": "${PREFIX}set prefix [new prefix]",
+                "value": "change prefix of your server"
+            },
+            "2": {
+                "name": "${PREFIX}set language [language]",
+                "value": "change language of your server (English or Japanese only)"
+            },
+            "3": {
+                "name": "${PREFIX}set channel",
+                "value": "set notice channel"
+            }
+        },
+        "japanese": {
+            "title": "設定ヘルプ",
+            "description": "[] は引数です",
+            "description_num": 3,
+            "1": {
+                "name": "${PREFIX}set prefix [new prefix]",
+                "value": "あなたのサーバーでの接頭辞を変更します"
+            },
+            "2": {
+                "name": "${PREFIX}set language [language]",
+                "value": "あなたのサーバーでの言語を変更します (英語 または 日本語 のみ)"
+            },
+            "3": {
+                "name": "${PREFIX}set channel",
+                "value": "set notice channel"
+            }
+        }
+    }
+}
