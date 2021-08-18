@@ -22,7 +22,7 @@ class Events(commands.Cog):
         await ctx.send("Reload completed!")
 
     @reload.error
-    async def ping_error(self, ctx, error):
+    async def reload_error(self, ctx, error):
         if isinstance(error, commands.NotOwner):
             return
         errors.error_print(error)
