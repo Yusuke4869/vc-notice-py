@@ -19,7 +19,7 @@ guild = GuildData()
 cogs = [
     "src.cogs.error",
     "src.cogs.embed",
-    "src.cogs.event",
+    "src.cogs.events",
     "src.cogs.help",
     "src.cogs.joined",
     "src.cogs.notices",
@@ -61,6 +61,14 @@ Also, When someone starts or ends \"Screen Share\", the bot does.""")
         print("".join(["-" for i in range(50)]))
         log.print_info_log(f"Logged in as {self.user.name}")
         #await self.change_presence(activity=discord.Game(name="Type v!help for help", type=1))
+
+    @commands.Cog.listener()
+    async def on_reload(self):
+        for cog in cogs:
+            try:
+                self.reload_extension(cog)
+            except Exception as e:
+                errors.error_print(e)
 
 """
 Run the bot.

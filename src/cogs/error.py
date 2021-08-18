@@ -1,5 +1,4 @@
 from discord.ext import commands
-from discord.ext.commands.errors import CommandNotFound
 
 class Error(commands.Cog):
 
@@ -11,7 +10,7 @@ class Error(commands.Cog):
         if hasattr(ctx.command, "on_error"):
             return
 
-        if isinstance(error, CommandNotFound):
+        if isinstance(error, commands.CommandNotFound):
             return
 
         raise error
